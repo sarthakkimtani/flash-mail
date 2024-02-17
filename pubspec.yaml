@@ -1,0 +1,82 @@
+name: flash_mail
+description: Temporary E-mail App, powered by mail.tm
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.1 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  auto_route: ^7.4.0
+  flutter_riverpod: ^2.4.0
+  url_launcher: ^6.2.1
+  flash: ^3.0.5+2
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+  dio: ^4.0.6
+  shimmer: ^3.0.0
+  flutter_inappwebview: ^6.0.0
+  flutter_downloader: ^1.11.6
+  external_path: ^1.0.3
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.6
+  flutter_lints: ^2.0.0
+  auto_route_generator: ^7.3.0
+  flutter_native_splash: ^2.3.4
+  flutter_launcher_icons: ^0.13.1
+  freezed: ^2.4.5
+  json_serializable: ^6.7.1
+  hive_generator: ^2.0.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false
+  min_sdk_android: 20
+  image_path: assets/images/icon.png
+  adaptive_icon_foreground: assets/images/icon.png
+  adaptive_icon_background: "#01111d"
+
+flutter_native_splash:
+  web: false
+  ios: false
+  color: "#01111d"
+  image: assets/images/splash.png
+  android12:
+    color: "#01111d"
+    branding: assets/images/splash.png
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/logo-small.png
+    - assets/images/empty.png
+    - assets/images/error.png
+    - assets/images/avatar.png
+  fonts:
+    - family: FlashMailIcons
+      fonts:
+        - asset: assets/fonts/FlashMailIcons.ttf
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Inter-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Inter-Black.ttf
+          weight: 900
